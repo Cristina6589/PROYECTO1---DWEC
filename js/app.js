@@ -147,6 +147,9 @@ botonSaludar.addEventListener("click", () => {
         mensaje.textContent =
             "Debes de introducir un nombre";
 
+        mensaje.classList.remove("destacado");
+        mensaje.classList.add("error");
+
 
         // return termina inmediatamente la ejecución
         // de esta función.
@@ -194,9 +197,10 @@ botonSaludar.addEventListener("click", () => {
     // esta instrucción hará que el mensaje
     // utilice esos estilos.
 
+    mensaje.classList.remove("error");
     mensaje.classList.add("destacado");
 
-
+    
 });
 
 
